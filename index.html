@@ -3,35 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Choose Login</title>
+  <title>Age Calculator</title>
   <link rel="stylesheet" href="p1.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <main class="container">
-    <h1>Login Type</h1>
+    <h1>Quick Age Calculator</h1>
+
     <div class="field">
-      <button id="userLogin" class="primary">Login as User</button>
+      <label for="heightInput">Height (cm)</label>
+      <input id="heightInput" type="number" min="0" placeholder="e.g. 165" />
+      <button id="heightBtn">Set Height</button>
     </div>
+
     <div class="field">
-      <button id="customerLogin" class="primary">Login as Customer</button>
+      <label for="weightInput">Weight (kg)</label>
+      <input id="weightInput" type="number" min="0" placeholder="e.g. 60" />
+      <button id="weightBtn">Set Weight</button>
     </div>
-    <div class="output">Choose a role to continue.</div>
+
+    <div class="field">
+      <button id="ageBtn" class="primary">Show Age</button>
+    </div>
+
+    <div id="output" class="output">Age will appear here</div>
+    <p class="hint">Use the buttons to record height and weight, then click Show Age.</p>
   </main>
-  <script>
-    const userLogin = document.getElementById('userLogin');
-    const customerLogin = document.getElementById('customerLogin');
-
-    userLogin.addEventListener('click', () => {
-      window.location.href = 'login-user.html';
-    });
-
-    customerLogin.addEventListener('click', () => {
-      window.location.href = 'login-customer.html';
-    });
-  </script>
   <script src="p1.js"></script>
 </body>
 </html>
-
 
