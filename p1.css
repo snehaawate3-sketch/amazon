@@ -1,0 +1,98 @@
+/* Basic layout */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f5f7ff;
+  color: #1f2a44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: min(460px, 92vw);
+  padding: 2.2rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 20px 45px rgba(16, 35, 65, 0.18);
+  background: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.9rem;
+  margin: 0 0 1.1rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.55rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+
+.field label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: rgba(31, 42, 68, 0.85);
+}
+
+.field input {
+  width: 100%;
+  padding: 0.72rem 0.85rem;
+  border-radius: 12px;
+  border: 1px solid rgba(31, 42, 68, 0.18);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.field input:focus {
+  border-color: rgba(63, 109, 247, 0.8);
+  box-shadow: 0 0 0 4px rgba(63, 109, 247, 0.14);
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #3f6df7, #6a5cff);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+button.primary {
+  background: linear-gradient(135deg, #1b9c80, #17d1b8);
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 22px rgba(100, 103, 239, 0.26);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 10px rgba(100, 103, 239, 0.25);
+}
+
+.output {
+  padding: 1.2rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(31, 42, 68, 0.12);
+  background: rgba(63, 109, 247, 0.06);
+  font-size: 1.1rem;
+  min-height: 54px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.hint {
+  font-size: 0.9rem;
+  color: rgba(31, 42, 68, 0.72);
+  margin: 0;
+}
